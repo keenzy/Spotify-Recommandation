@@ -172,23 +172,20 @@ def recommend_songs( song_list, spotify_data, n_songs=10):
 
 
 
-#with st.form('Spotify'):
+with st.form('Spotify'):
     #a = st.text_input('Chanson 1 ')
     #b = st.number_input('Date de sortie 1')
     #a1 = st.text_input('Chanson 2')
     #b1 = st.number_input('Date de sortie 2')
     #submit = st.form_submit_button('Que me recommandez-vous ?')
 
-#if submit:
-    #list_songs=[{'name': a, 'year':b},
+if submit:
+    list_songs=[{'name': a, 'year':b},
                 #{'name': a1, 'year':b1}]
-    #lst=recommend_songs(list_songs, data)
-    #s = ''
-    #for i in lst:
+    lst=recommend_songs(list_songs, data)
+    s = ''
+    for i in lst:
         #st.write(i)
 
 
-#list_songs=[{'name': 'Our Song', 'year':2006},
-                #{'name': 'White Christmas', 'year': 2008}]
-#recommend_songs(list_songs, data)"""
 
